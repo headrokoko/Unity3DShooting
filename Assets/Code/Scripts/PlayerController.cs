@@ -29,10 +29,10 @@ public class PlayerController : MonoBehaviour {
 
 		//ピッチ運動
 		if(Input.GetKey(KeyCode.W)){
-			transform.Rotate(-PitchSpeed,0.0f,0.0f);
+			transform.Rotate(PitchSpeed,0.0f,0.0f);
 		}
 		if(Input.GetKey(KeyCode.S)){
-			transform.Rotate(PitchSpeed,0.0f,0.0f);
+			transform.Rotate(-PitchSpeed,0.0f,0.0f);
 		}
 
 		//加減速
