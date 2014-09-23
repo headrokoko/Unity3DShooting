@@ -8,8 +8,9 @@ public class PlayerController : MonoBehaviour {
 	public float PitchSpeed = 5.0f;
 	public float MaxSpeed = 50.0f;
 	public float MinSpeed = 0.0f;
-
-	private float PlayerSpeed;
+	
+	[HideInInspector]
+	public float PlayerSpeed;
 
 	// Use this for initialization
 	void Start () {
