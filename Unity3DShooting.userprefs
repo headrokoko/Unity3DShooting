@@ -1,0 +1,19 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\States\StageSelectState.cs">
+    <Files>
+      <File FileName="Assets\Code\Scripts\GameStateManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\States\GameStartState.cs" Line="21" Column="25" />
+      <File FileName="Assets\Code\InterFace\GameInterFace.cs" Line="5" Column="19" />
+      <File FileName="Assets\Code\Scripts\GameData.cs" Line="8" Column="22" />
+      <File FileName="Assets\Code\States\StageSelectState.cs" Line="41" Column="34" />
+      <File FileName="Assets\Code\States\PlayGameState.cs" Line="20" Column="28" />
+      <File FileName="Assets\Code\States\ResultState.cs" Line="20" Column="85" />
+      <File FileName="Assets\Code\Scripts\PlayerController.cs" Line="13" Column="8" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
