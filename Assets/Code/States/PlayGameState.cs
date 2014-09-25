@@ -23,6 +23,7 @@ namespace Assets.Code.States{
 
 		public void Render(){
 			if(GUI.Button(new Rect(500,500,100,50),"Result")){
+				Pcontroller.PlayerSpeed = 0;
 				Gmanager.StateChange(new ResultState(Gmanager));
 			}
 		}

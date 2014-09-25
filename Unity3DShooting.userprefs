@@ -1,16 +1,14 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\States\StageSelectState.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Code\States\ResultState.cs">
     <Files>
-      <File FileName="Assets\Code\Scripts\GameStateManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\States\ResultState.cs" Line="27" Column="23" />
       <File FileName="Assets\Code\Scripts\GameStateManager.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\States\GameStartState.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\InterFace\GameInterFace.cs" Line="1" Column="1" />
       <File FileName="Assets\Code\Scripts\GameData.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\States\StageSelectState.cs" Line="41" Column="34" />
-      <File FileName="Assets\Code\States\PlayGameState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\States\ResultState.cs" Line="1" Column="1" />
-      <File FileName="Assets\Code\Scripts\PlayerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Code\States\StageSelectState.cs" Line="40" Column="32" />
+      <File FileName="Assets\Code\States\PlayGameState.cs" Line="26" Column="33" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
