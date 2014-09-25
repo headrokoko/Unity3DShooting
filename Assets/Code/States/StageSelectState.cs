@@ -24,6 +24,7 @@ namespace Assets.Code.States{
 			if(GUI.Button(new Rect(05,200,250,50),"Stage 1")){
 				Application.LoadLevel("Stage1");
 				Time.timeScale = 1;
+				Pcontroller.enabled = true;
 				Pcontroller.PlayerSpeed = 10.0f;
 				Debug.Log("Stage 1 start");
 				Gmanager.StateChange(new PlayGameState(Gmanager));
@@ -32,6 +33,7 @@ namespace Assets.Code.States{
 			else if(GUI.Button(new Rect(05,250,250,50),"Stage 2")){
 				Application.LoadLevel("Stage2");
 				Time.timeScale = 1;
+				Pcontroller.enabled = true;
 				Pcontroller.PlayerSpeed = 10.0f;
 				Debug.Log("Stage 2 start");
 				Gmanager.StateChange(new PlayGameState(Gmanager));
@@ -40,6 +42,7 @@ namespace Assets.Code.States{
 			else if(GUI.Button(new Rect(05,300,250,50),"Stage 3")){
 				Application.LoadLevel("Stage3");
 				Time.timeScale = 1;
+				Pcontroller.enabled = true;
 				Pcontroller.PlayerSpeed = 10.0f;
 				Debug.Log("Stage 3 start");
 				Gmanager.StateChange(new PlayGameState(Gmanager));
@@ -48,6 +51,7 @@ namespace Assets.Code.States{
 			else if(GUI.Button(new Rect(05,350,250,50),"TEST")){
 				Application.LoadLevel("testScene");
 				Time.timeScale = 1;
+				Pcontroller.enabled = true;
 				Pcontroller.PlayerSpeed = 10.0f;
 				Debug.Log("testScene start");
 				Gmanager.StateChange(new PlayGameState(Gmanager));

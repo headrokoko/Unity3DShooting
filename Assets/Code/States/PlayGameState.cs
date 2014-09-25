@@ -16,7 +16,9 @@ namespace Assets.Code.States{
 
 		public void StateUpdata(){
 			if(gamedata.playerHP <= 0){
+
 				Gmanager.StateChange(new ResultState(Gmanager));
+				Pcontroller.enabled =false;
 				Pcontroller.PlayerSpeed = 0.0f;
 			}
 		}

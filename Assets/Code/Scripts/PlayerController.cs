@@ -39,10 +39,22 @@ public class PlayerController : MonoBehaviour {
 		//加減速
 		if(Input.GetKey(KeyCode.Q) && (PlayerSpeed < MaxSpeed)){
 			PlayerSpeed += 1.0f;
+			Debug.Log(PlayerSpeed);
+			particleSystem.startLifetime = PlayerSpeed * 0.02f;
+			particleSystem.startSize = PlayerSpeed * 0.05f;
+			Debug.Log(particleSystem.startLifetime);
+			if(PlayerSpeed > 0){
+				particleSystem.Play();
+			}
 		}
 
 		if(Input.GetKey(KeyCode.E) && (PlayerSpeed > MinSpeed)){
 			PlayerSpeed -= 1.0f;
+			particleSystem.startLifetime = PlayerSpeed * 0.02f;
+			particleSystem.startSize = PlayerSpeed * 0.05f;
+			if(PlayerSpeed <= 0){
+				particleSystem.Stop();
+			}
 		}
 		
 	}

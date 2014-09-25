@@ -6,9 +6,12 @@ namespace Assets.Code.States{
 	public class GameStartState : GameInterFace {
 
 		private GameStateManager GManager;
+		private PlayerController Pcontroller;
 
 		public GameStartState(GameStateManager GStateManager){
 			GManager = GStateManager;
+			Pcontroller = GameObject.Find("Player").GetComponent<PlayerController>();
+			Pcontroller.enabled = false;
 			Time.timeScale = 0;
 		}
 
