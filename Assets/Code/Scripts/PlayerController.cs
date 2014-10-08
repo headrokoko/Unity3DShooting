@@ -1,8 +1,13 @@
-﻿using UnityEngine;
+using UnityEngine;
 using System.Collections;
 
 public class PlayerController : MonoBehaviour {
 
+	public GameObject PlayerBullet;
+	private Transform bulletSpawnPoint;
+	private Transform Turret;
+	protected float shootRate;
+	protected float elapsedTime;
 	public float BaseSpeed = 10.0f;
 	public float RollSpeed = 5.0f;
 	public float PitchSpeed = 5.0f;
@@ -15,35 +20,45 @@ public class PlayerController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		PlayerSpeed = BaseSpeed;
+		Turret = gameObject.transform.GetChild(0).transform;
+		bulletSpawnPoint = Turret.GetChild(0).transform;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		transform.Translate(Vector3.forward * PlayerSpeed * 0.01f);
-		//ロール運動
+		//x軸移動
 		if(Input.GetKey(KeyCode.A)){
-			transform.Rotate(0,0,RollSpeed);
+			transform.Translate(-BaseSpeed,0,0);
 		}
 		if(Input.GetKey(KeyCode.D)){
-			transform.Rotate(0,0,-RollSpeed);
+			transform.Translate(BaseSpeed,0,0);
 		}
 
 		//ピッチ運動
 		if(Input.GetKey(KeyCode.W)){
-			transform.Rotate(PitchSpeed,0.0f,0.0f);
+			transform.Translate(0,0,BaseSpeed);
 		}
 		if(Input.GetKey(KeyCode.S)){
-			transform.Rotate(-PitchSpeed,0.0f,0.0f);
+			transform.Translate(0,0,-BaseSpeed);
 		}
 
 		//加減速
 		if(Input.GetKey(KeyCode.Q) && (PlayerSpeed < MaxSpeed)){
-			PlayerSpeed += 1.0f;
+			transform.Translate(0,BaseSpeed,0);
 		}
 
 		if(Input.GetKey(KeyCode.E) && (PlayerSpeed > MinSpeed)){
-			PlayerSpeed -= 1.0f;
+			transform.Translate(0,-BaseSpeed,0);
 		}
-		
+		if(Input.GetKey(KeyCode.Space))
+		{
+			if (elapsedTime >= shootRate)
+			{
+				elapsedTime = 0.0f;
+				
+				Instantiate(PlayerBullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
+			}
+		}
 	}
 }

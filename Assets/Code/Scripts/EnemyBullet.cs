@@ -6,7 +6,7 @@ public class EnemyBullet : MonoBehaviour
 	//Explosion Effect
 	public GameObject Explosion;
 	
-	public float Speed = 800.0f;
+	public float Speed = 100.0f;
 	public float LifeTime = 3.0f;
 	public int damage = 50;
 	
