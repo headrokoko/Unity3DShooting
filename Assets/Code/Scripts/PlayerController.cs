@@ -6,8 +6,8 @@ public class PlayerController : MonoBehaviour {
 	public GameObject PlayerBullet;
 	private Transform bulletSpawnPoint;
 	private Transform Turret;
-	protected float shootRate;
-	protected float elapsedTime;
+	private float BulletLimit = 10;
+	public float BulletQuantity = 0;
 	public float BaseSpeed = 10.0f;
 	public float RollSpeed = 5.0f;
 	public float PitchSpeed = 5.0f;
@@ -53,12 +53,9 @@ public class PlayerController : MonoBehaviour {
 		}
 		if(Input.GetKey(KeyCode.Space))
 		{
-			if (elapsedTime >= shootRate)
-			{
-				elapsedTime = 0.0f;
-				
+
 				Instantiate(PlayerBullet, bulletSpawnPoint.position, bulletSpawnPoint.rotation);
-			}
+
 		}
 	}
 }

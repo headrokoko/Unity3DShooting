@@ -3,17 +3,17 @@ using System.Collections;
 
 public class EnemyController : AdvancedFSM 
 {
-	
+
 	public GameObject EnemyBullet;
 	private int HP;
 	
 	//
 	protected override void Initialize()
 	{
-		HP = 100;
+		HP = 300;
 		
 		elapsedTime = 0.0f;
-		shootDelay = 0.1f;
+		shootDelay = 0.4f;
 		
 		GameObject objPlayer = GameObject.FindGameObjectWithTag("Player");
 		playerTransform = objPlayer.transform;
@@ -86,15 +86,18 @@ public class EnemyController : AdvancedFSM
 	void OnCollisionEnter(Collision collision)
 	{
 		//
-		if (collision.gameObject.tag == "PlayerBullet")
+		if (collision.gameObject.tag == "PlayerBullet" && HP >0)
 		{
 			HP -= 50;
 			Debug.Log("Enemy Damage");
 			if (HP <= 0)
 			{
+
+
 				Debug.Log("Switch to Dead State");
 				SetTransition(Transition.NoHealth);
 				Explode();
+				GlobalScore.GetScore();
 			}
 		}
 	}

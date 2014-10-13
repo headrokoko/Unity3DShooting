@@ -5,7 +5,6 @@ public class PlayerBullet : MonoBehaviour
 {
 	//Explosion Effect
 	public GameObject Explosion;
-	
 	public float Speed = 100.0f;
 	public float LifeTime = 3.0f;
 	public int damage = 50;
@@ -17,8 +16,10 @@ public class PlayerBullet : MonoBehaviour
 	
 	void Update()
 	{
+
 		transform.position += 
-			transform.forward * Speed * Time.deltaTime;       
+			transform.forward * Speed * Time.deltaTime;    
+
 	}
 	
 	void OnCollisionEnter(Collision collision)
