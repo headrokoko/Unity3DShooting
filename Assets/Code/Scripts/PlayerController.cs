@@ -18,37 +18,45 @@ public class PlayerController : MonoBehaviour {
 	public float PlayerSpeed;
 
 	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
 		PlayerSpeed = BaseSpeed;
 		Turret = gameObject.transform.GetChild(0).transform;
 		bulletSpawnPoint = Turret.GetChild(0).transform;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+	{
 		transform.Translate(Vector3.forward * PlayerSpeed * 0.01f);
 		//x軸移動
-		if(Input.GetKey(KeyCode.A)){
+		if(Input.GetKey(KeyCode.A))
+		{
 			transform.Translate(-BaseSpeed,0,0);
 		}
-		if(Input.GetKey(KeyCode.D)){
+		if(Input.GetKey(KeyCode.D))
+		{
 			transform.Translate(BaseSpeed,0,0);
 		}
 
 		//ピッチ運動
-		if(Input.GetKey(KeyCode.W)){
+		if(Input.GetKey(KeyCode.W))
+		{
 			transform.Translate(0,0,BaseSpeed);
 		}
-		if(Input.GetKey(KeyCode.S)){
+		if(Input.GetKey(KeyCode.S))
+		{
 			transform.Translate(0,0,-BaseSpeed);
 		}
 
 		//加減速
-		if(Input.GetKey(KeyCode.Q) && (PlayerSpeed < MaxSpeed)){
+		if(Input.GetKey(KeyCode.Q) && (PlayerSpeed < MaxSpeed))
+		{
 			transform.Translate(0,BaseSpeed,0);
 		}
 
-		if(Input.GetKey(KeyCode.E) && (PlayerSpeed > MinSpeed)){
+		if(Input.GetKey(KeyCode.E) && (PlayerSpeed > MinSpeed))
+		{
 			transform.Translate(0,-BaseSpeed,0);
 		}
 		if(Input.GetKey(KeyCode.Space))

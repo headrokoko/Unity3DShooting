@@ -3,6 +3,10 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{BFC56A62-0471-3CBC-91AF-2976FA4A380C}") = "Unity3DShooting", "Assembly-CSharp.csproj", "{DBEDE00D-BC2D-1B1E-8AB8-B6D85C9D17A7}"
 EndProject
+Project("{BFC56A62-0471-3CBC-91AF-2976FA4A380C}") = "Unity3DShooting", "Assembly-CSharp-Editor.csproj", "{3D6F4981-90B2-E49C-7D02-45D828F0A817}"
+EndProject
+Project("{BFC56A62-0471-3CBC-91AF-2976FA4A380C}") = "Unity3DShooting", "Assembly-UnityScript.unityproj", "{6DA17542-9D1F-69C9-8F35-8E209119C396}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +17,19 @@ Global
 		{DBEDE00D-BC2D-1B1E-8AB8-B6D85C9D17A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBEDE00D-BC2D-1B1E-8AB8-B6D85C9D17A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBEDE00D-BC2D-1B1E-8AB8-B6D85C9D17A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D6F4981-90B2-E49C-7D02-45D828F0A817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D6F4981-90B2-E49C-7D02-45D828F0A817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D6F4981-90B2-E49C-7D02-45D828F0A817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D6F4981-90B2-E49C-7D02-45D828F0A817}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DA17542-9D1F-69C9-8F35-8E209119C396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DA17542-9D1F-69C9-8F35-8E209119C396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DA17542-9D1F-69C9-8F35-8E209119C396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DA17542-9D1F-69C9-8F35-8E209119C396}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																																						GlobalSection(MonoDevelopProperties) = preSolution
+																																																															GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
