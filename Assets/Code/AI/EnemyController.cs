@@ -89,6 +89,7 @@ public class EnemyController : AdvancedFSM
 		if (collision.gameObject.tag == "PlayerBullet" && HP >0)
 		{
 			HP -= 50;
+			renderer.material.color = Color.blue;
 			Debug.Log("Enemy Damage");
 			if (HP <= 0)
 			{

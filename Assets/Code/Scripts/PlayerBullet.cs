@@ -3,7 +3,7 @@ using System.Collections;
 
 public class PlayerBullet : MonoBehaviour
 {
-	//Explosion Effect
+	//被弾時の爆発のエフェクト
 	public GameObject Explosion;
 	public float Speed = 100.0f;
 	public float LifeTime = 3.0f;
