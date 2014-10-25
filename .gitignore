@@ -10,12 +10,14 @@
 /*.userprefs
 /*.pidb
 /*.booproj
+3DAssets/
 
+UnityTestTools/
 Audio/
 Done/
 Materials/
 Models/
 OmegaFighter01/
-Prefabs/
+
 StandardAssets/
 Textures/
